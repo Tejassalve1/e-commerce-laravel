@@ -14,19 +14,50 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
-<style>
-    .custom-login
-    {
-        height: 500px;
-        padding-top: 100px;
-    }
-</style>
+    <style>
+        .custom-login {
+            height: 500px;
+            padding-top: 100px;
+        }
+
+        img.slider-img {
+            height: 400px !important;
+        }
+
+        .custom-product {
+            /* height: 600px; */
+        }
+
+        .trending-img{
+            height: 100px;
+        }
+
+        .trending-item{
+           float: left;
+           width: 25%;
+        }
+
+        .trending-wrapper{
+            margin: 10px;
+        }
+
+
+        .detail-img{
+            height: 200px;
+        }
+
+
+        .search-box{
+           width: 500px !important; 
+        }
+    </style>
+
 </head>
 
 <body>
-    {{ View::make('header')}}
+    {{ View::make('header') }}
     @yield('content')
-    {{ View::make('footer')}}
+    {{ View::make('footer') }}
 </body>
 {{-- <script>
     $(document).ready(function() {
@@ -37,4 +68,5 @@
 
     })
 </script> --}}
+
 </html>
