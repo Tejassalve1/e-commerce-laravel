@@ -2,7 +2,7 @@
 use App\Http\Controllers\productcontroller;
 $total = 0;
 if (Session::has('user')) {
-    // $total=productcontroller::cartItem();
+    $total=productcontroller::cartItem();
 }
 ?>
 
@@ -46,7 +46,7 @@ if (Session::has('user')) {
                     <li><a href="/login">login</a></li>
                 @endif
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">cart Item ({{ $total }})</a>
+                    <a class="nav-link active" aria-current="page" href="/cartlist">cart Item ({{$total}})</a>
                 </li>
             </ul>
         </div>
